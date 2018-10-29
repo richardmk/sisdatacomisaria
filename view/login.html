@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Vendor styles -->
+        <link rel="stylesheet" href="../public/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="../public/vendors/bower_components/animate.css/animate.min.css">
+
+        <!-- App styles -->
+        <link rel="stylesheet" href="../public/css/app.min.css">
+    </head>
+
+    <body data-sa-theme="3">
+        <div class="login">
+
+            <!-- Login -->
+            <div class="login__block active" id="l-login">
+                <div class="login__block__header">
+                    <i class="zmdi zmdi-account-circle"></i>
+                    Inicie sesión con su cuenta 
+                        
+                   
+                </div>
+                
+                <div class="login__block__body">
+                <form method="post" id="frmAcceso" autocomplete="off">
+                    <div class="form-group">
+                        <input type="text" class="form-control text-center" autocomplete="off"  placeholder="Usuario" id="logina" name="logina" autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control text-center"  autocomplete="off" placeholder="Contraseña" id="clavea"  name="clavea" autocomplete="off">
+                    </div>
+
+                    <button type="submit" style="cursor: pointer;"  class="btn btn--icon login__block__btn"><i class="zmdi zmdi-long-arrow-right"></i></button>
+                </form><br>
+                <span data-sa-action="login-switch" data-sa-target="#l-forget-password" style="cursor: pointer;">¿ Olvidó su contraseña?</span>
+            </div>
+
+                
+               
+            </div>
+
+
+           
+       
+
+            <!-- Forgot Password -->
+             <div class="login__block" id="l-forget-password">
+                <div class="login__block__header">
+                    <i class="zmdi zmdi-account-circle"></i>
+                    ¿ Olvidó su contraseña ?
+
+                    <div class="actions actions--inverse login__block__actions">
+                        <div class="dropdown">
+                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert actions__item"></i>
+
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" data-sa-action="login-switch" data-sa-target="#l-login" href="">Ya cuenta con una clave?</a>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login__block__body">
+                    <p class="mb-5">Envie un mensaje indicando el motivo <br> y su nombre completo al correo: richard.mejia.k@gmail.com <br> o comuníquese al Nroº 959504606. </p>
+
+            
+                </div>
+            </div>
+            
+        </div>
+
+      
+
+        <!-- Javascript -->
+        <!-- Vendors -->
+        <script src="../public/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../public/vendors/bower_components/popper.js/dist/umd/popper.min.js"></script>
+        <script src="../public/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <!-- App functions and actions -->
+        <script src="../public/js/app.min.js"></script>
+        <script src="../public/js/bootbox.min.js"></script>
+        <script type="text/javascript" src="scripts/login.js"></script>
+    </body>
+</html>
